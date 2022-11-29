@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My personal webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="webpage_style.css"> 
+        <script src="webpage_main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Personal webpage</a>
+            <div>
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="webpage.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="impressions.html">Impressions</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+              </div>
+            </div>
+          </nav>
+
+          <br/>
+           
+          <div class="row">
+            <div class="col">
+              <div  id="width1" class="text-center">
+                  <div class="card">
+                    <img class="card-img-top" src="images/image.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Magdalena Georgieva</h4>
+                         <p class="card-text" style="text-align: center;">student at FEEIT "Ss. Cyril and Methodius University"</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+                <div class="col">
+                    <br><br><br><br><br>
+                    <h1>Hello</h1>
+                    <h5 class="no">A bit about me</h5>
+                    <p>I am a student at Faculty of Electrical Engineering and Information Technologies. <br/> 
+                       I am currently  in the third year of studying Telecommunication and Information Engineering.<br/>
+                       Here is my personal website. Take a look and learn little more about me, and add your own insight.
+                    </p>
+                    <div class="btnposition">
+                        <button type="button" id="cv" onclick="func1()" class="btn btn-warning btn-circle btn-xl outline" style="color: white;">CV</button>
+                        <button type="button" id="in" onclick="func2()" class="btn btn-primary btn-circle btn-xl outline" style="color: white;">Interests</button>
+                    </div>
+                </div>
+          </div>
+          <br><br><br><br><br><br>
+          
+          <div class="container-fluid st1">
+          <h3 class="pinfo">Personal info</h3>
+          <div class="row"><a id="scid"></a>
+            
+            <div class="col pos">
+                <p>Name</p>
+                <p>Adress</p>
+                <p>Nationality</p>
+                <p>Date and place of birth</p>
+                
+                <h3 style="text-align: left;">Education</h3>
+                <p>Date</p>
+                <p>Name and type of educational institution</p>
+                <p>Date</p>
+                <p>Name and type of educational institution</p>
+                <p>First Language</p>
+                <p>Other Languages</p>
+            </div>
+            
+            <div class="col">
+                <div>
+                <p>Magdalena Georgieva</p>
+                <p>Risto Krle n.7, Struga</p>
+                <p>Macedonian</p>
+                <p>04.08.2001, Struga, Republic of Macedonia</p>
+                </div>
+                
+                <div>
+                <h3><br></h3>
+                <p>2016 - 2020</p>
+                <p>Highschool "Dr. Ibrahim Temo", Struga, Republic of Macedonia</p>
+                <p>2020 - present</p>
+                <p>Faculty of Electrical Engineering and Information Technologies, Ss. Cyril and Methodius University</p>
+                <p>Macedonian</p>
+                <p>English, French</p>
+                </div>
+            </div>
+          </div>
+        </div>
+          <br><br><br><br><br>
+
+          <div class="container-fluid st2"><h2 style="text-align: center; color: white;">Interests</h2><br>
+            <div class="row in">
+              <div class="col" style="padding-left:5%; padding-right:5%">
+                <div class="container" style="border-radius: 10px; background-color: #035dbd; padding: 20px; color: white">
+
+                <h4 style="text-align: center;">My Favourites</h4>
+
+                <p> - My favourite (animated) movie is: <em>"Up"</em> by Pixar Animation Studios and Walt Disney Pictures</p>
+                <p><a href="https://www.imdb.com/title/tt1049413/" class="clickLinks" style="text-decoration: none;" target="_blank">
+                  Click here to learn more about the movie</a></p>
+                
+                 <p> - My favourite song is: <em>"There Must Be A Song Like You"</em> (Live) by Helado Negro</p>
+                <p><a href="https://www.youtube.com/watch?v=5-q6qWOs3fE" class="clickLinks" style="text-decoration: none;" target="_blank">
+                  Click here to learn more about the song</a></p>
+                  
+                  <p> - My favourite book is: <em>"Fahrenheit 451"</em> by Ray Bradbury</p>
+                <p><a href="https://en.wikipedia.org/wiki/Fahrenheit_451" class="clickLinks" style="text-decoration: none;" target="_blank">
+                  Click here to learn more about the book</a></p>
+              </div>
+              </div>
+              <div class="col" style="padding-left:5%; padding-right:5%">
+                <div class="container" style="border-radius: 10px; background-color: #035dbd; padding: 20px; color: white">
+
+                  <h4 style="text-align: center;">My Free Time</h4>
+  
+                  <p> - One of my favourite past time activities is attending salsa cubana dance classes</p>
+                  <img src="images/salsa.png" alt="salsa" width="230" height="150" style="margin-left: 17%; margin-bottom: 2%;">
+                  
+                   <p> - Other than that, I usually spend my free time hanging out with friends.
+                    Nothing beats the satisfaction of good conversation, a batch of delicious food, a warm cup of coffee with great company.</p>
+                  <img src="images/coffee.jpg" alt="coffee" width="230" height="150" style="margin-left: 17%; margin-bottom: 2%;">
+                </div>
+              </div>
+              <div class="col" style="padding-left:5%; padding-right:5%">
+                <div class="container" style="border-radius: 10px; background-color: #035dbd; padding: 20px; color: white">
+
+                  <h4 style="text-align: center;">My Pets</h4>
+  
+                  <p>- This is my pet dog Ogi!</p>
+                  <img src="images/Ogi.jpg" alt="ogi" width="200" height="200" style="margin-left: 17%; margin-bottom: 2%;">
+                  
+                   <p>- And this is my cat Viski!</p>
+                  <img src="images/img6.jpg" alt="Viski" width="200" height="200" style="margin-left: 17%; margin-bottom: 2%;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+      </body>
+</html>

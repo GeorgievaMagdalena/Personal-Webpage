@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My personal webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="webpage_style.css"> 
+        <script src="webpage_main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Personal webpage</a>
+            <div>
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="webpage.html">Home</a>
+                <a class="nav-item nav-link" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="impressions.html">Impressions</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+              </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3 class="gt" style="text-align: center;">Blog posts</h3><br>
+
+        <div class="container" style="border-radius: 10px; background-color: #cfcfcf; padding: 20px; width: 65%;">
+            <h4 class="titleHeading">What's the real reason you can't go faster than the speed of light?</h4>
+            <h6>There's the textbook answer, then there's the real answer.  Dec 8, 2022</h6>
+            <img src="images/spaceb2.jpg" class="blogImages" alt="SpeedOfLight" width="100%" height="150pt">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;This ultimate speed limit is a curious fact and one that runs quite against our common intuition.
+                 After all, if you are zooming along in your car and step on the gas, you'll go faster.
+                 And while your car has a top speed, we know of faster things like fighter jets and bullets.
+                 However, speeding up eventually stops working. 
+                 No matter how hard you try, you cannot go faster than ~186,000 miles per second (~300,000 km/sec). 
+                 The most common explanation for this cosmic speed limit is that as an object goes faster and faster, its mass increases.
+                 And this explanation makes some sense. After all, it's harder to push a mountain than a pebble. 
+                 If the mass of objects become infinite as they get closer to the speed of light, it makes sense that you cannot break that speed barrier — it would take infinite energy to accomplish.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Instead of space and time, there is a single thing, called spacetime.
+                Individuals can move through time or space, just as travelers can decide to move east/west vs. north/south. 
+                 When Einstein's theory was pushed harder, what was revealed was that every object travels through spacetime at a single speed — the speed of light..
+                 And it's identical in spacetime. Objects move in spacetime at the speed of light. A stationary object isn't moving through space at all, so the object is moving through time at the speed of light.
+                Furthermore, an object moving through space at the speed of light has no speed left over to move through time.</p>
+        </div>
+        <br> 
+        <div class="container" style="border-radius: 10px; background-color: #cfcfcf; padding: 20px; width: 65%;">
+            <h4 class="titleHeading">Things to Do in Struga</h4>
+            <h6>All the things you can do in the city nicknamed "City of Poetry and World's Poetry City".  Jan 19, 2020</h6>
+            <img class="blogImages" src="images/struga.jpg" alt="Struga" width="100%" height="150pt">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lying on Lake Ohrid, but without the hustle and bustle of its main town, Struga enjoys the picturesque lakeside scenery without the crowds.
+                 With its mild climate and relatively quiet beaches, holidaying in Struga feels magically like a seaside retreat within a country that doesn't have a coastline.
+                 With a number of lake watersports on offer as well as a good choice of inexpensive hotels in the pleasant town center, this is a place in which to sit back, 
+                 relax and enjoy the surrounding forest and mountain scenery within the comfort of a typical Macedonian town.
+                 The Black Drin river divides the city and thus provides the perfect setting for a number of little cafes and restaurants which border its banks.
+                 Aside the lake shore and beach bars and restaurants, you can take a walk around and see the old bazar. Everything in Struga is within walking distance, so you will also cover the city center, and the beautiful river flow.
+                 Also visit the church of Saint George that is built on top of Samuel's church dating back as far as the 14th century. You can also find Magdalena and Teodora in a random cafe.</p>
+        </div>
+
+        <br>
+        <div id="addBlog"></div>
+        <div class="container" style="border-radius: 10px; background-color: #cfcfcf; padding: 20px; width: 65%;">
+            <p><b>Here you can write your blog post</b></p>
+            <label for="blogHeading">Enter your blog heading:</label><br>
+            <input type="text" class="inp" id="blogHeading"><br>
+
+            <label for="blogDescription">Enter your blog description:</label><br>
+            <input type="text" class="inp" id="blogDescription"><br>
+
+            <label for="blogImage">Enter your image url:</label><br>
+            <input type="text" class="inp" id="blogImage"><br>
+
+            <label for="blogText">Enter your blog text:</label><br>
+            <textarea id="blogText" style="width: 100%; height: 130pt;" ></textarea><br>
+
+            <input type="button" class="sub" style="margin-top: 2%;" onclick="addBlogPost()" value="Add Blog Post">
+        </div>
+  </body>
+</html>
